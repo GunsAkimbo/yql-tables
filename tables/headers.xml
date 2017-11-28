@@ -12,7 +12,7 @@
       </inputs>
       <execute><![CDATA[
       var results = y.rest('http://httpbin.org/headers').get();
-      response.object = {url: results.url, status: results.status, headers: results.headers};
+      response.object = {url: results.url, status: results.status, headers: results.headers, response: results.response};
 ]]></execute>
     </select>
   </bindings>
